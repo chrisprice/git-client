@@ -1,0 +1,15 @@
+{
+  "name": "git-client",
+  "version": "0.0.0",
+  "description": "A simple git client",
+  "main": "main.js",
+  "dependencies": {
+    "async": ">0.0.0",
+    "mkdirp": "0.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Price",
+  "license": "BSD"
+}
