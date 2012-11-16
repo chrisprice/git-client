@@ -1,19 +1,8 @@
-var fs = require('../../lib/objects/fs'),
-    path = require('path'),
-    repo = require('../../lib/repo'),
-    wrench = require('wrench');
-
-var sampleGitDirectory = path.resolve(path.join(__dirname, 'data'));
-repo.gitDirectory = path.resolve(path.join(__dirname, 'temp'));
+var fs = require('../../lib/objects/fs')
+    data = require('./data');
 
 describe('Reading/writing an object to a file', function() {
-  beforeEach(function() {
-    wrench.copyDirSyncRecursive(sampleGitDirectory, repo.gitDirectory);
-  });
-
-  afterEach(function() {
-    wrench.rmdirSyncRecursive(repo.gitDirectory);
-  });
+  data();
 
   it('Should write a buffer successfully', function(done) {
     fs.write(new Buffer("blob 16\000what is up, doc?"), function(error, hash) {
