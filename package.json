@@ -4,11 +4,15 @@
   "description": "A simple git client",
   "main": "main.js",
   "dependencies": {
-    "async": ">0.0.0",
-    "mkdirp": "0.3.4"
+    "async": "~0.1.22",
+    "mkdirp": "~0.3.4"
+  },
+  "devDependencies": {
+    "wrench": "~1.4.3",
+    "jasmine-node": "~1.2.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine-node spec"
   },
   "author": "Chris Price",
   "license": "BSD"
