@@ -7,7 +7,7 @@ describe('Reading/writing an object to a file', function() {
   it('Should write a buffer', function(done) {
     fs.write(new Buffer("blob 16\000what is up, doc?"), function(error, hash) {
       expect(error).toBeNull();
-      expect(hash).toBe("bd9dbf5aae1a3862dd1526723246b20206e5fc37");
+      expect(hash.toString()).toBe("bd9dbf5aae1a3862dd1526723246b20206e5fc37");
       done();
     });
   });
