@@ -1,4 +1,4 @@
-var hash = require('../../lib/objects/hash');;
+var hash = require('../../lib/objects/hash-utils');;
 
 describe('Hash', function() {
   it('Should convert a hex string into a buffer representation', function() {
