@@ -12,7 +12,7 @@ describe('Pack', function() {
       var buffer = fs.readFileSync(packPath);
       pack.read(buffer, result, function(error, result) {
         expect(error).toBeNull();
-        console.log(result);
+//        console.log(result);
         done();
 
       });
